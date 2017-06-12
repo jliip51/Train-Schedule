@@ -1,0 +1,21 @@
+body {
+  background-image: url(images/traindepot.png)
+}
+
+#heading {
+  font-family: Times;
+  font-weight: bold;
+}
+
+#subHeading {
+  font-family: Times;
+  font-style: italic;
+}
+
+.panel-title {
+  font-weight: bold;
+}
+
+th {
+  font-weight: bold;
+}
