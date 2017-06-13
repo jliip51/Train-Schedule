@@ -22,6 +22,23 @@ function currentTime() {
   setTimeout(currentTime, 1000);
 };
 
+$(".form-field").on("keyup", function() {
+  var traintemp = $("#train-name").val().trim();
+  var citytemp = $("#destination").val().trim();
+  var timetemp = $("#first-train").val().trim();
+  var freqtemp = $("#frequency").val().trim();
+
+  sessionStorage.setItem("train", traintemp);
+  sessionStorage.setItem("city", citytemp);
+  sessionStorage.setItem("time", timetemp);
+  sessionStorage.setItem("freq", freqtemp);
+});
+
+$("#train-name").val(sessionStorage.getItem("train"));
+$("#destination").val(sessionStorage.getItem("city"));
+$("#first-train").val(sessionStorage.getItem("time"));
+$("#frequency").val(sessionStorage.getItem("freq"));
+
 $("#submit").on("click", function(event) {
   event.preventDefault();
 
@@ -48,6 +65,8 @@ $("#submit").on("click", function(event) {
       startTime: startTime,
       dateAdded: firebase.database.ServerValue.TIMESTAMP
     });
+
+    sessionStorage.clear();
   }
 
 });
@@ -72,10 +91,14 @@ database.ref().on("child_added", function(childSnapshot) {
 
 });
 
-currentTime();
-
-$(document).on("click", ".arrival", function(){
+$(document).on("click", ".arrival", function() {
   keyref = $(this).attr("data-key");
   database.ref().child(keyref).remove();
   window.location.reload();
 });
+
+currentTime();
+
+setInterval(function() {
+  window.location.reload();
+}, 60000);
