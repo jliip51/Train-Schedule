@@ -87,6 +87,10 @@ database.ref().on("child_added", function(childSnapshot) {
   newrow.append($("<td class='text-center'>" + minToArrival + "</td>"));
   newrow.append($("<td class='text-center'><button class='arrival btn btn-danger btn-xs' data-key='" + key + "'>X</button></td>"));
 
+  if (minToArrival < 6) {
+    newrow.addClass("info");
+  }
+
   $("#train-table-rows").append(newrow);
 
 });
