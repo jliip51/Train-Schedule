@@ -1,0 +1,22 @@
+{
+  "name": "train-schedule-hw",
+  "version": "1.0.0",
+  "description": "train-homework",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jliip51/Train-Schedule-HW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jliip51/Train-Schedule-HW/issues"
+  },
+  "homepage": "https://github.com/jliip51/Train-Schedule-HW#readme",
+  "dependencies": {
+    "heroku": "^0.2.0"
+  }
+}
