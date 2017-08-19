@@ -1,5 +1,5 @@
 # Train Scheduler
-Front-end Train schedule (Javascript, jQuery, HTML5/CSS3.
+Front-end train schedule application
 
 [Train Schedule Link](https://jliip51.github.io/Train-Schedule/ "Train-Schedule Link")
 
@@ -8,4 +8,12 @@ Accepts user input to add new train name, start time and frequency to schedule. 
 
 ## Sample View
 
-![Train Schedule App Screenshot](/css/images/screenshot.png)
+![Train Schedule App Screenshot](/assets/css/images/screenshot.png/)
+
+## Technology
++ Javascrict
++ jQuery
++ HTML5
++ CSS3
++ Firebase
++ Moment.js
