@@ -11,7 +11,7 @@ Accepts user input to add new train name, start time and frequency to schedule. 
 ![Train Schedule App Screenshot](/assets/css/images/screenshot.png/)
 
 ## Technology
-+ Javascrict
++ Javascript
 + jQuery
 + HTML5
 + CSS3
